@@ -19,18 +19,18 @@ function ItemForm({ onItemFormSubmit }) {
 
   return (
     <form className="NewItem" onSubmit={handleSubmit}>
-      <label htmlFor="item-name">Name</label>
+      <label htmlFor="name">Name</label>
       <input
-        id="item-name"
+        id="name"
         type="text"
         name="name"
         value={itemName}
         onChange={(e) => setItemName(e.target.value)}
       />
 
-      <label htmlFor="item-category">Category</label>
+      <label htmlFor="category">Category</label>
       <select
-        id="item-category"
+        id="category"
         name="category"
         value={itemCategory}
         onChange={(e) => setItemCategory(e.target.value)}
